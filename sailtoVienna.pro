@@ -3,8 +3,12 @@ TEMPLATE = aux
 TRANSLATIONS += "translations/$${TARGET}-de.ts"
 
 CONFIG += sailfishapp_i18n
+CONFIG += sailfishapp_i18n_idbased
 
-qml.files = upstream/qml/silica
+QML_FILES = $$files(qml/*)
+for(file, QML_FILES) {
+    qml.files += $$file
+}
 qml.path = /usr/share/$${TARGET}/qml
 
 pyWL.files = upstream/pyWL
@@ -15,6 +19,7 @@ glue.path = /usr/share/$${TARGET}
 
 desktopcp.extra = cp upstream/data/sailtoVienna.desktop.sailfish sailtoVienna.desktop
 desktopcp.path = /usr/share/applications
+QMAKE_DISTCLEAN += sailtoVienna.desktop
 
 desktop.files = sailtoVienna.desktop
 desktop.path = /usr/share/applications
