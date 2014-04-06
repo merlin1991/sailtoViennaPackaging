@@ -1,6 +1,7 @@
 TEMPLATE = aux
 
 TRANSLATIONS += "translations/$${TARGET}-de.ts"
+TRANSLATIONS += "translations/$${TARGET}-en.ts"
 
 CONFIG += sailfishapp_i18n
 CONFIG += sailfishapp_i18n_idbased
