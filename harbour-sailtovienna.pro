@@ -18,11 +18,10 @@ pyWL.path = /usr/share/$${TARGET}
 glue.files = upstream/glue
 glue.path = /usr/share/$${TARGET}
 
-desktopcp.extra = cp upstream/data/sailtoVienna.desktop.sailfish sailtoVienna.desktop
-desktopcp.path = /usr/share/applications
-QMAKE_DISTCLEAN += sailtoVienna.desktop
-
-desktop.files = sailtoVienna.desktop
+desktop.files = upstream/data/harbour-sailtovienna.desktop
 desktop.path = /usr/share/applications
 
-INSTALLS += qml pyWL glue desktopcp desktop
+icon.files = upstream/data/harbour-sailtovienna.png
+icon.path = /usr/share/icons/hicolor/86x86/apps
+
+INSTALLS += qml pyWL glue desktop icon
