@@ -3,7 +3,7 @@
 
 Summary: Vienna public transport schedule
 Name: harbour-sailtovienna
-Version: 0.5
+Version: 0.5.1
 Release: 1
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
