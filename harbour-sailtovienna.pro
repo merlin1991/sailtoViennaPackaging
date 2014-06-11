@@ -24,4 +24,7 @@ desktop.path = /usr/share/applications
 icon.files = upstream/data/harbour-sailtovienna.png
 icon.path = /usr/share/icons/hicolor/86x86/apps
 
-INSTALLS += qml pyWL glue desktop icon
+data.files = upstream/data/cover.png
+data.path = /usr/share/$${TARGET}/data
+
+INSTALLS += qml pyWL glue desktop icon data
