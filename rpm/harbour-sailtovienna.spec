@@ -3,7 +3,7 @@
 
 Summary: Vienna public transport schedule
 Name: harbour-sailtovienna
-Version: 0.5.3
+Version: 0.5.4
 Release: 1
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
@@ -15,6 +15,7 @@ Requires: sailfishsilica-qt5
 Requires: libsailfishapp-launcher
 Requires: python3-requests
 Requires: qt5-qtdeclarative-import-positioning
+Requires: nemo-qml-plugin-configuration-qt5
 BuildRequires: qt5-qmake
 BuildRequires: pkgconfig(sailfishapp)
 #no python2 (shebang issues)
